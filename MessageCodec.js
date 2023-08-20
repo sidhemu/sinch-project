@@ -5,6 +5,8 @@ class Message {
   }
 }
 
+console.log('just to trigger the workflow actions');
+
 class MessageCodec {
   constructor() {
     this.MAX_HEADER_SIZE = 1023;
