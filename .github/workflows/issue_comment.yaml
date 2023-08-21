@@ -12,7 +12,7 @@ jobs:
         run: echo '${{ toJSON(github.event) }}' | jq
         shell: bash
       - name: Create comment
-        uses: peter-evans/create-or-update-comment@v1
+        uses: peter-evans/create-or-update-comment@v3
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
@@ -20,6 +20,6 @@ jobs:
             - With GitHub **Markdown** :sparkles:
             - Created by [create-or-update-comment][1]
 
-            [1]: https://github.com/peter-events/create-or-update-comment
+            [1]: https://github.com/peter-evans/create-or-update-comment
           reactions: '+1'
       
